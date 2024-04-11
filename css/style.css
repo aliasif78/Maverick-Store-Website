@@ -1,0 +1,594 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.signup_link a{
+    color: #2691d9;
+    text-decoration: underline;
+}
+
+.hovering:hover{
+    color:purple;
+    transition: .5s;
+}
+
+.header{
+    top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    padding-left: 20px; 
+    padding-top: 20px;  
+}
+
+.links{
+    margin-left: 1050px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.link2{
+    margin-left: 50px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover{
+    color: black;
+    transition: .5s;
+}
+
+.link2:hover{
+    color: black;
+    transition: .5s;
+}
+
+.shop {
+    width: 40px;
+    padding-left: 20px;
+    padding-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.shop .top-cart {
+    display: none;
+    position: absolute;
+    width: 40px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.shop:hover .top-cart {
+    display: inline;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+}
+
+.email{
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 120%;
+    color: gray;
+}
+
+.email:hover{
+    color: blue;
+    transition: 0.5s;
+}
+
+.maverick{
+    width: 120px;
+    padding-left: 440px;
+}
+
+.social{
+    height: 20px;
+    padding-left: 600px;
+}
+
+.social1{
+    height: 20px;
+    padding-left: 10px;
+}
+
+.topper{
+    padding-top: 150px;
+    padding-left: 100px;
+    font-size: 400%;
+    font-family: sans-serif;
+    color: white;
+}
+
+.top2{
+    padding-left: 110px;
+    font-size: 120%;
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.shift{
+    padding-left: 100px;
+}
+
+.buttons{
+    background-color: #2691d9;
+    border:none;
+    color: white;
+    height: 70px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 150%;
+}
+
+.buttons:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.footer1{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.link3
+{
+    margin-left: 900px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.link3:hover{
+    color: black;
+    transition: .5s;
+}
+
+.categoryhead{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 400%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.linkcat{
+    margin-left: 1000px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.linkcat2{
+    margin-left: 50px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.linkcat:hover{
+    color: royalblue;
+    transition: .5s;
+}
+
+.linkcat2:hover{
+    color: royalblue;
+    transition: .5s;
+}
+
+.box{
+    background-color: white;
+    border-radius: 25px;
+    height: 890px;
+    padding-top: 20px;
+}
+
+.drinks{
+    height: 250px;
+    width: 350px;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+.description{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 35.5%;
+    top: 35%;
+}
+
+.shift2{
+    padding-left: 500px;
+}
+
+.buttons2{
+    background-color: #2691d9;
+    border:none;
+    color: white;
+    height: 70px;
+    width: 350px;
+    border-radius: 25px;
+    font-size: 150%;
+}
+
+.buttons2:hover{
+    background-color: black;
+    color: royalblue;
+    transition: 0.5s;
+}
+
+.vegs{
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    left: 65%;
+    top: 36.4%;
+}
+
+.description2{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 67%;
+    top: 35%;
+}
+
+.shift3{
+    position: absolute;
+    left: 65%;
+    top: 72%;
+}
+
+.ice{
+    height: 250px;
+    width: 350px;
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+.description3{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 35.5%;
+    top: 87.5%;
+}
+
+.shift4{
+    position: absolute;
+    left: 33.5%;
+    top: 124.5%;
+}
+
+.meat{
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    left: 65%;
+    top: 88.9%;
+}
+
+.description4{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 67.2%;
+    top: 87.5%;
+}
+
+.shift5{
+    position: absolute;
+    left: 65%;
+    top: 124.5%;
+}
+
+.apple{
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    left: 5%;
+    top: 36.5%;
+}
+
+.sell{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 8.5%;
+    top: 55.5%;
+}
+
+.banana{
+    height: 250px;
+    width: 350px;
+    position: absolute;
+    left: 5%;
+    top: 88.9%;
+}
+
+.sell2{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 8.5%;
+    top: 108%;
+}
+
+.shift6{
+    position: absolute;
+    left: 5%;
+    top: 72%;
+}
+
+.shift7{
+    position: absolute;
+    left: 5%;
+    top: 124.5%;
+}
+
+.sell3{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 37%;
+    top: 55.5%;
+}
+
+.sell4{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 68.3%;
+    top: 55.5%;
+}
+
+.sell5{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 37%;
+    top: 108%;
+}
+
+.sell6{
+    position: absolute;
+    color: black;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 68.3%;
+    top: 108%;
+}
+
+.linkcart{
+    margin-left: 50px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.linkcart:hover{
+    color: royalblue;
+    transition: .5s;
+}
+
+.linkcart2{
+    margin-left: 900px;
+    font-size: 125%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.linkcart2:hover{
+    color: royalblue;
+    transition: .5s;
+}
+
+.shopping{
+    font-size: 250%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+.shopping-cart{
+    background-color: white;
+    border-radius: 25px;
+    height: 480px;
+    width: 1000px;
+}
+
+.purchase{
+    background-color: black;
+    border-radius: 25px;
+    height: 480px;
+    width: 400px;
+    margin-left: 1100px;
+}
+
+.producthead{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    position: absolute;
+    left: -4%;
+    top: 23%;
+}
+
+.buyapples{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 39%;
+    left: 12%;
+}
+
+.buybananas{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 55%;
+    left: 12%;
+}
+
+.productbuy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    left: 67.2%;
+    top: 27%;
+}
+
+.checkout{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    left: 73.7%;
+    top: 73%;
+}
+
+.checkout:hover{
+    color: white;
+    background-color: royalblue;
+    transition: 0.5s;
+}
